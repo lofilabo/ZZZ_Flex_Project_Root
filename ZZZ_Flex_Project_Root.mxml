@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application 
+	xmlns:mx="http://www.adobe.com/2006/mxml" 
+	backgroundColor="0xffffff" 
+	creationComplete="creationComplete(this)" 
+	horizontalAlign="center" 
+	verticalAlign="middle"
+	xmlns:vob="vob.*">
+
+	<vob:mainPanel1
+	 width="0"
+	 height="0"
+	 verticalScrollPolicy="off"
+	 horizontalScrollPolicy="off" 
+	 id="mainPanel"
+	 visible="false"
+	  layout="absolute"
+	>
+
+	
+	</vob:mainPanel1>
+
+	<mx:Canvas id="loginboxHolder">
+	     <mx:VBox id="loginBox" x="377" y="0" height="300" width="300" horizontalAlign="center" backgroundImage="image/loginb.gif" borderStyle="none">
+	        	<mx:TextArea id="exta" height="121" visible="false" tabIndex="1" />
+	        	<mx:TextInput id="unm" height="20" visible="true" tabIndex="2"  width="80"/>
+	        	<mx:TextInput id="lgn" height="20"  visible="true" tabIndex="3" displayAsPassword="true"  width="80"/>
+	        	<mx:Button id="test2" label="ログイン" click="buttontest(this)"/>
+	        	<mx:TextArea id="exta2" height="1" visible="false"/>
+	    </mx:VBox>
+	</mx:Canvas>
+
+
+
+
+<mx:Script source="maininterface.as" />	
+<mx:Script>
+	<![CDATA[
+		import mx.events.FlexEvent;
+		
+	]]>
+</mx:Script>		
+</mx:Application>
